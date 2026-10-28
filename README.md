@@ -16,6 +16,16 @@
 
 </div>
 
+<p align="center"><b>Remote control for 18 AI coding agents from your phone</b></p>
+
+<div align="center">
+<table>
+<tr><td align="center" width="112"><img src=".github/media/agents/claude.svg" alt="Claude Code" width="48" height="48"><br><sub>Claude Code</sub></td><td align="center" width="112"><img src=".github/media/agents/codex.svg" alt="Codex" width="48" height="48"><br><sub>Codex</sub></td><td align="center" width="112"><img src=".github/media/agents/opencode.svg" alt="OpenCode" width="48" height="48"><br><sub>OpenCode</sub></td><td align="center" width="112"><img src=".github/media/agents/gemini.svg" alt="Gemini CLI" width="48" height="48"><br><sub>Gemini CLI</sub></td><td align="center" width="112"><img src=".github/media/agents/cursor.svg" alt="Cursor Agent CLI" width="48" height="48"><br><sub>Cursor Agent CLI</sub></td><td align="center" width="112"><img src=".github/media/agents/copilot.svg" alt="GitHub Copilot CLI" width="48" height="48"><br><sub>GitHub Copilot CLI</sub></td></tr>
+<tr><td align="center" width="112"><img src=".github/media/agents/kimi.svg" alt="Kimi Code" width="48" height="48"><br><sub>Kimi Code</sub></td><td align="center" width="112"><img src=".github/media/agents/qwen.svg" alt="Qwen Code" width="48" height="48"><br><sub>Qwen Code</sub></td><td align="center" width="112"><img src=".github/media/agents/kiro.svg" alt="Kiro CLI" width="48" height="48"><br><sub>Kiro CLI</sub></td><td align="center" width="112"><img src=".github/media/agents/antigravity.svg" alt="Google Antigravity" width="48" height="48"><br><sub>Google Antigravity</sub></td><td align="center" width="112"><img src=".github/media/agents/codebuddy.svg" alt="CodeBuddy Code" width="48" height="48"><br><sub>CodeBuddy Code</sub></td><td align="center" width="112"><img src=".github/media/agents/cline.svg" alt="Cline CLI" width="48" height="48"><br><sub>Cline CLI</sub></td></tr>
+<tr><td align="center" width="112"><img src=".github/media/agents/trae.svg" alt="Trae Agent" width="48" height="48"><br><sub>Trae Agent</sub></td><td align="center" width="112"><img src=".github/media/agents/codefuse.svg" alt="CodeFuse Agent" width="48" height="48"><br><sub>CodeFuse Agent</sub></td><td align="center" width="112"><img src=".github/media/agents/deepseek.svg" alt="DeepSeek Harness" width="48" height="48"><br><sub>DeepSeek Harness</sub></td><td align="center" width="112"><img src=".github/media/agents/pi.svg" alt="Pi" width="48" height="48"><br><sub>Pi</sub></td><td align="center" width="112"><img src=".github/media/agents/openclaw.svg" alt="OpenClaw" width="48" height="48"><br><sub>OpenClaw</sub></td><td align="center" width="112"><img src=".github/media/agents/hermes.svg" alt="Hermes Agent" width="48" height="48"><br><sub>Hermes Agent</sub></td></tr>
+</table>
+</div>
+
 <p align="center"><img src=".github/media/agent-model-en.gif" alt="Switching agents and models inside one task" width="720"></p>
 
 <h3 align="center">Run one command, scan with your phone, and keep coding from anywhere.</h3>
@@ -72,8 +82,7 @@ Every run updates OpenTandem to the latest version first, so there is nothing el
 ## What you get
 
 OpenTandem starts the agent CLIs already installed on your computer, signed in with your own accounts,
-inside your own project folders: Codex, Claude Code, OpenCode, Gemini CLI, GitHub Copilot CLI,
-Cursor Agent CLI, Kimi Code, Qwen Code, Kiro CLI and more.
+inside your own project folders. All 18 agents listed at the top are supported.
 
 ### Choose the right agent for the next run.
 

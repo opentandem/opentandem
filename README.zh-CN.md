@@ -16,6 +16,16 @@
 
 </div>
 
+<p align="center"><b>在手机上远程使用 18 个 AI 编码 Agent</b></p>
+
+<div align="center">
+<table>
+<tr><td align="center" width="112"><img src=".github/media/agents/claude.svg" alt="Claude Code" width="48" height="48"><br><sub>Claude Code</sub></td><td align="center" width="112"><img src=".github/media/agents/codex.svg" alt="Codex" width="48" height="48"><br><sub>Codex</sub></td><td align="center" width="112"><img src=".github/media/agents/opencode.svg" alt="OpenCode" width="48" height="48"><br><sub>OpenCode</sub></td><td align="center" width="112"><img src=".github/media/agents/gemini.svg" alt="Gemini CLI" width="48" height="48"><br><sub>Gemini CLI</sub></td><td align="center" width="112"><img src=".github/media/agents/cursor.svg" alt="Cursor Agent CLI" width="48" height="48"><br><sub>Cursor Agent CLI</sub></td><td align="center" width="112"><img src=".github/media/agents/copilot.svg" alt="GitHub Copilot CLI" width="48" height="48"><br><sub>GitHub Copilot CLI</sub></td></tr>
+<tr><td align="center" width="112"><img src=".github/media/agents/kimi.svg" alt="Kimi Code" width="48" height="48"><br><sub>Kimi Code</sub></td><td align="center" width="112"><img src=".github/media/agents/qwen.svg" alt="Qwen Code" width="48" height="48"><br><sub>Qwen Code</sub></td><td align="center" width="112"><img src=".github/media/agents/kiro.svg" alt="Kiro CLI" width="48" height="48"><br><sub>Kiro CLI</sub></td><td align="center" width="112"><img src=".github/media/agents/antigravity.svg" alt="Google Antigravity" width="48" height="48"><br><sub>Google Antigravity</sub></td><td align="center" width="112"><img src=".github/media/agents/codebuddy.svg" alt="CodeBuddy Code" width="48" height="48"><br><sub>CodeBuddy Code</sub></td><td align="center" width="112"><img src=".github/media/agents/cline.svg" alt="Cline CLI" width="48" height="48"><br><sub>Cline CLI</sub></td></tr>
+<tr><td align="center" width="112"><img src=".github/media/agents/trae.svg" alt="Trae Agent" width="48" height="48"><br><sub>Trae Agent</sub></td><td align="center" width="112"><img src=".github/media/agents/codefuse.svg" alt="CodeFuse Agent" width="48" height="48"><br><sub>CodeFuse Agent</sub></td><td align="center" width="112"><img src=".github/media/agents/deepseek.svg" alt="DeepSeek Harness" width="48" height="48"><br><sub>DeepSeek Harness</sub></td><td align="center" width="112"><img src=".github/media/agents/pi.svg" alt="Pi" width="48" height="48"><br><sub>Pi</sub></td><td align="center" width="112"><img src=".github/media/agents/openclaw.svg" alt="OpenClaw" width="48" height="48"><br><sub>OpenClaw</sub></td><td align="center" width="112"><img src=".github/media/agents/hermes.svg" alt="Hermes Agent" width="48" height="48"><br><sub>Hermes Agent</sub></td></tr>
+</table>
+</div>
+
 <p align="center"><img src=".github/media/agent-model-zh.gif" alt="在同一个任务里切换 Agent 和模型" width="720"></p>
 
 <h3 align="center">在电脑上运行一条命令，用手机扫码，之后在哪里都能继续写代码。</h3>
@@ -71,8 +81,7 @@ $ npx opentandem@latest remote
 
 ## 你能得到什么
 
-OpenTandem 启动的是你电脑上已经装好、用你自己账号登录的 Agent，在你自己的项目文件夹里运行：Codex、Claude Code、
-OpenCode、Gemini CLI、GitHub Copilot CLI、Cursor Agent CLI、Kimi Code、Qwen Code、Kiro CLI 等等。
+OpenTandem 启动的是你电脑上已经装好、用你自己账号登录的 Agent，在你自己的项目文件夹里运行，页面顶部列出的 18 个 Agent 都已支持。
 
 ### 换 Agent、换模型，任务接着跑。
 
