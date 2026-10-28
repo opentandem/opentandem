@@ -1,0 +1,20 @@
+{
+  "name": "@opentandem/runner",
+  "private": true,
+  "description": "OpenTandem Runner: runs AI coding agents on your own machine and connects them to OpenTandem.",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "test": "vitest run && node --test \"tests/node/*.test.mjs\"",
+    "bundle": "node build/cli.mjs",
+    "selftest": "node build/cli.mjs --self-test"
+  },
+  "devDependencies": {
+    "eslint-scope": "^8.4.0",
+    "espree": "^10.4.0",
+    "vitest": "^4.1.11"
+  }
+}

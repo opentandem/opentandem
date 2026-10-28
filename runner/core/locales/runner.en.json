@@ -1,0 +1,22 @@
+{
+  "Preview": {
+    "title": "Local preview",
+    "blockedTitle": "This browser blocked the preview credential",
+    "blockedCookie": "The preview needs its own partitioned cookie, but this browser did not keep it.",
+    "upgradeBrowser": "Safari / iOS removed this support in versions 18.5 through 26.1; upgrade to version 26.2 or later.",
+    "openTab": "You can also open the preview URL in a separate tab to avoid this restriction.",
+    "invalidCredential": "The local preview credential is invalid; return to OpenTandem and reopen the preview.",
+    "crossSiteDenied": "The cross-site request was denied.",
+    "serviceUnavailable": "The local service is temporarily unavailable; check that it is still running."
+  },
+  "Cloudflared": {
+    "preparing": "Preparing the local preview connector from the OpenTandem CDN…",
+    "ready": "Local preview connector is ready.",
+    "failed": "Could not prepare the local preview connector. Check your network and run the installer again."
+  },
+  "LocalStore": {
+    "readmeTitle": "Local conversation records",
+    "readmeHeading": "English",
+    "readmeBody": "  This folder holds the conversation records OpenTandem keeps on this computer (opentandem.db).\n  - Uninstalling or deleting the OpenTandem Runner does NOT delete this folder.\n  - Deleting this folder by hand permanently loses the local copy, and the server cannot restore it for you.\n  - Do not edit opentandem.db by hand. To back it up, copy this whole folder after quitting OpenTandem."
+  }
+}

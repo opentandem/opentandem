@@ -1,0 +1,22 @@
+{
+  "Preview": {
+    "title": "本地预览",
+    "blockedTitle": "这个浏览器挡住了预览的登录凭证",
+    "blockedCookie": "预览窗口需要写一条只属于它自己的分区 cookie，当前浏览器没有保留它。",
+    "upgradeBrowser": "Safari / iOS 在 18.5 到 26.1 之间移除过这项支持，升级到 26.2 或更新版本即可。",
+    "openTab": "也可以把预览地址在新标签页里单独打开，那样不受这个限制。",
+    "invalidCredential": "本地预览凭证无效，请回到 OpenTandem 重新打开预览。",
+    "crossSiteDenied": "跨站请求已拒绝。",
+    "serviceUnavailable": "本地服务暂时不可用，请确认服务仍在运行。"
+  },
+  "Cloudflared": {
+    "preparing": "正在从 OpenTandem CDN 准备本地预览连接组件…",
+    "ready": "本地预览连接组件已就绪。",
+    "failed": "本地预览连接组件准备失败，请检查网络后重新运行安装命令。"
+  },
+  "LocalStore": {
+    "readmeTitle": "本机对话记录",
+    "readmeHeading": "中文",
+    "readmeBody": "  这个目录是 OpenTandem 在本机保存的对话记录（opentandem.db）。\n  - 卸载或删除 OpenTandem Runner 不会删除本目录。\n  - 手动删除本目录会永久丢失本机这份副本，服务器也无法替你找回。\n  - 请勿手动修改 opentandem.db；需要备份时请在 OpenTandem 退出后整体复制本目录。"
+  }
+}
