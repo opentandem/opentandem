@@ -12,6 +12,17 @@
       <select id="project" aria-label="project"></select>
     </header>
 
+    <section class="picker">
+      <div id="presets" class="presets" role="group"></div>
+      <div id="custom" class="custom" hidden>
+        <label><span id="fromLabel"></span><input id="from" type="date"></label>
+        <label><span id="toLabel"></span><input id="to" type="date"></label>
+        <button id="apply" type="button"></button>
+        <span id="maxSpan" class="muted"></span>
+      </div>
+      <p id="rangeError" class="error" role="alert"></p>
+    </section>
+
     <section class="hero">
       <h1 id="headline"></h1>
       <div class="big"><span id="bigNumber" class="n">–</span><span id="bigUnit" class="u"></span><span class="t">Token</span></div>
@@ -29,6 +40,7 @@
       <div id="bars" class="bars"></div>
       <div class="axis"><span id="axisStart"></span><span id="axisEnd"></span></div>
       <div id="legend" class="legend"></div>
+      <p id="by" class="muted by"></p>
     </section>
 
     <section>
