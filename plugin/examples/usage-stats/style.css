@@ -1,0 +1,60 @@
+:root { --fg: #1a1a1a; --fg2: #55534e; --muted: #8a8880; --org: #f05a1a; --amber: #f59a4a; --line: rgba(0,0,0,.1); }
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; color: var(--fg);
+  font: 14px/1.5 system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(900px 560px at 85% 0%, rgba(240,90,26,.10), transparent 60%), radial-gradient(700px 480px at 0% 70%, rgba(57,135,229,.07), transparent 62%), #fff;
+  background-attachment: fixed;
+}
+main { max-width: 880px; margin: 0 auto; padding: clamp(20px, 4vw, 48px); display: grid; gap: clamp(24px, 4vw, 40px); }
+h1, h2 { margin: 0; }
+h2 { font-size: 14px; font-weight: 600; color: var(--fg2); letter-spacing: 1px; margin-bottom: 12px; }
+.muted { color: var(--muted); margin: 0; }
+.num, .n, .top-list .v { font-variant-numeric: tabular-nums; font-weight: 800; }
+
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.date { color: var(--muted); letter-spacing: 2px; font-variant-numeric: tabular-nums; }
+select, textarea, button { font: inherit; color: var(--fg); background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; }
+select { max-width: 55%; }
+
+.hero h1 { font-size: clamp(22px, 4vw, 34px); font-weight: 700; letter-spacing: 1px; }
+.big { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 12px; margin-top: 4px; }
+.big .n { font-size: clamp(64px, 17vw, 140px); line-height: 1; letter-spacing: -.04em; background: linear-gradient(100deg, #1a1a1a 5%, #c2410c 55%, #ff6a2b 95%); -webkit-background-clip: text; background-clip: text; color: transparent;  }
+.big .u { font-size: clamp(32px, 7vw, 56px); font-weight: 800; }
+.big .t { font-size: clamp(20px, 4vw, 32px); font-weight: 700; color: var(--fg2); }
+
+.facts { display: grid; }
+.fact { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.fact .num { font-size: clamp(32px, 7vw, 52px); line-height: 1.1; color: var(--amber); }
+.fact.first .num { color: var(--org);  }
+.fact .label { font-size: clamp(16px, 3vw, 22px); font-weight: 700; text-align: right; }
+
+.bars { display: flex; align-items: flex-end; gap: clamp(4px, 1.5vw, 12px); height: 150px; }
+.bar { flex: 1; min-width: 0; display: flex; flex-direction: column-reverse; justify-content: flex-start; height: 100%; }
+.bar > i { display: block; width: 100%; min-height: 0; }
+.bar > i:last-child { border-radius: 4px 4px 0 0; }
+.axis { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; margin-top: 6px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 3px; }
+.legend b { color: var(--fg2); font-weight: 600; }
+
+.top-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.top-list li { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.top-list .rk { color: var(--muted); font-variant-numeric: tabular-nums; }
+.top-list .ti { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.top-list .v { color: var(--amber); }
+.top-list .meta { grid-column: 2 / 4; display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; min-width: 0; }
+.top-list .meta i { width: 8px; height: 8px; border-radius: 2px; flex: none; }
+.top-list .track { grid-column: 2 / 4; height: 4px; border-radius: 2px; background: rgba(0,0,0,.06); }
+.top-list .track div { height: 100%; border-radius: 2px; }
+
+.error { color: #dc2626; margin: 0; }
+
+@media (min-width: 720px) {
+  .facts { grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); }
+  .fact { flex-direction: column; align-items: flex-start; border-top: 0; border-left: 1px solid var(--line); padding: 16px 0 4px 20px; }
+  .fact:first-child { border-left: 0; padding-left: 0; }
+  .fact .num { font-size: clamp(28px, 3.7vw, 42px); white-space: nowrap; }
+  .fact .label { font-size: 16px; color: var(--fg2); font-weight: 600; text-align: left; }
+}

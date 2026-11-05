@@ -1,0 +1,6 @@
+{
+  "name": "Usage",
+  "title": { "zh": "用量", "en": "Usage" },
+  "scopes": ["projects.list", "sessions.list"],
+  "entry": "index.html"
+}
