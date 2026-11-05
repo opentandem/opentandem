@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opentandem.org/schemas/plugin-manifest.json",
+  "title": "OpenTandem plugin manifest",
+  "description": "manifest.json at the root of a plugin folder. The plugin is the page of an OpenTandem app: a sidebar entry plus a page in the main area.",
+  "type": "object",
+  "required": [
+    "title"
+  ],
+  "properties": {
+    "title": {
+      "description": "Shown in the sidebar and above the page. One string, or one string per language (the console picks the viewer's language, then English, then Chinese).",
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20
+        },
+        {
+          "type": "object",
+          "properties": {
+            "zh": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 20
+            },
+            "en": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 20
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      ]
+    },
+    "entry": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-][A-Za-z0-9._/-]*\\.html?$",
+      "default": "index.html",
+      "description": "Path of the HTML page to open, relative to the folder root."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40,
+      "description": "App name. Only read when the folder is imported by a workspace admin (Settings → Apps → Import plugin folder), which creates the app with this name."
+    },
+    "scopes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]+\\.[a-z]+$"
+      },
+      "description": "Capabilities the page needs, for example [\"sessions.list\"]. Only read on import: the importing admin confirms them before the app can use them."
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@opentandem/plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Build OpenTandem apps: call OpenTandem capabilities from an app page in the console or from your own server.",
+  "type": "module",
+  "exports": {
+    ".": "./src/client/index.js",
+    "./server": "./src/server/index.js",
+    "./capabilities": "./src/capabilities/index.js"
+  },
+  "files": [
+    "src",
+    "manifest.schema.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://opentandem.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentandem/opentandem.git",
+    "directory": "plugin"
+  },
+  "bugs": "https://github.com/opentandem/opentandem/issues",
+  "license": "AGPL-3.0-only",
+  "keywords": [
+    "opentandem",
+    "plugin",
+    "sdk",
+    "ai",
+    "coding-agent"
+  ],
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\""
+  }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <header class="top">
+      <span id="range" class="date"></span>
+      <select id="project" aria-label="project"></select>
+    </header>
+
+    <section class="hero">
+      <h1 id="headline"></h1>
+      <div class="big"><span id="bigNumber" class="n">–</span><span id="bigUnit" class="u"></span><span class="t">Token</span></div>
+      <p id="progress" class="muted"></p>
+    </section>
+
+    <section class="facts">
+      <div class="fact first"><span id="runs" class="num">–</span><span class="label" data-t="runs"></span></div>
+      <div class="fact"><span id="sessions" class="num">–</span><span class="label" data-t="sessions"></span></div>
+      <div class="fact"><span id="agents" class="num">–</span><span class="label" data-t="agents"></span></div>
+      <div class="fact"><span id="output" class="num">–</span><span class="label" data-t="output"></span></div>
+    </section>
+
+    <section class="chart">
+      <div id="bars" class="bars"></div>
+      <div class="axis"><span id="axisStart"></span><span id="axisEnd"></span></div>
+      <div id="legend" class="legend"></div>
+    </section>
+
+    <section>
+      <h2 data-t="top"></h2>
+      <ol id="top" class="top-list"></ol>
+      <p id="note" class="muted"></p>
+    </section>
+
+    <p id="error" class="error"></p>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
